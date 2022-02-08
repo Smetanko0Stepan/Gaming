@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Roboto:wght@900&display=swap');
+
+*, *::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-color: rgb(247, 247, 247);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-color: black;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+input{
+    all: unset;
+}
+main{
+    max-width: 1130px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    box-shadow: 0 0 3px rgb(0 0 0 / 39%);
+    border-radius: 10px;
+    background: #eee;
+}
+ul>li{
+    list-style: none;
+}
+#backgroundlink{
+    background: linear-gradient(to bottom, #263353 0px, transparent 150px), url(https://s3.gaming-cdn.com/images/products/8144/background/8144.jpg) center 0px no-repeat #263353;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 140px;
+    left: 0;
+}
+#li-su2{
+    display: none;
+}
+#mobile-title-block{
+    display: none;
+}
+.header-inner{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.header-inner-searcher{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-inner-searcher>.logo{
+    background-image: url('https://www.instant-gaming.com/themes/igv1/images/logo7.png');
+    width: 140px;
+    height: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 20px 0;
+}
+.search{
+    background-color: rgba(255,84,0,0.25);
+    border-radius: 100px;
+    display: flex;
+}
+.input-search{
+    height: 4.4rem;
+    background: 0;
+    color: #ff5400;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 0;
+    width: 40rem;
+    padding-left: 2rem;
+    outline: transparent;
+    font-weight: 400;
+}
+.input-search::placeholder{
+    color: #ff5400;
+}
+.icon-search{
+    width: 3.6rem;
+    height: 3.6rem;
+    background: #ff5400 url(https://www.instant-gaming.com/themes/igv1/modules/searchBox/images/ig-google-search-hover.png) 9px 8px no-repeat;
+    background-size: 19px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 0.4rem;
+}
+.icon-search:hover{
+    background-color: #bd3e00;
+}
+.log, .reg{
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.log{
+    background-image: linear-gradient(90deg,#2e698c,#2ab0c1);
+}
+.reg{
+    background-image: linear-gradient(90deg,#d68f52,#b56825);
+}
+.nav-back{
+    background-color: #263353;
+    font-size: 1.5rem!important;
+    font-family: sans-serif;
+}
+.nav{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.nav>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav>ul>li:not(:first-child){
+    margin: 2.5rem 0 2.5rem 3rem;
+}
+.nav>ul>li>a{
+    color: #ffffff;
+}
+.banner{
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+.price{
+    font-size: 2.4rem;
+    color: #fff;
+    text-shadow: 0 0 8px #000;
+    display: inline-block;
+    position: absolute;
+    font-weight: 700;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+.site-content{
+    padding: 2rem;
+    position: relative;
+    border-radius: 0 0 8px 8px;
+    background-color: #eee;
+}
+.games .site-content{
+    border-radius: 8px;
+}
+.title-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0 0.3rem;
+}
+.title-block>p{
+    color: #444;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0.4rem 0;
+}
+.title-block>a{
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #444;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+.title-block>a:hover{
+    background-color: #444;
+    color: #eee;
+}
+.products-panel{
+    margin: 0 -1rem 3rem;
+    text-align: center;
+}
+.product{
+    width: 17.8%;
+    margin: 0 1rem 3.5rem;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 250ms;
+}
+.product>a{
+    width: 100%;
+    position: relative;
+}
+.product>a>img{
+    border-radius: 8px;
+}
+.product:hover{
+    transform: scale(1.05);
+}
+.shadow{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.discount{
+    background-color: #ff5400;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.6rem;
+    color: #fff;
+    bottom: -0.2rem;
+    left: -0.2rem;
+    position: absolute;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.product-price{
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.6rem;
+    text-shadow: 0 0 4px #000;
+}
+.product-name{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #777;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.high .product{
+    width: 22.7%;
+}
+.panel{
+    position: relative;
+    margin: 0 0 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 0.2rem;
+}
+.panel>a, .panel>a>img{
+    border-radius: 8px;
+}
+.left{
+    text-align: left!important;
+}
+.partners{
+    margin-bottom: 4rem;
+}
+.tabs{
+    display: flex;
+    justify-content: flex-start;
+}
+.tab{
+    display: inline-block;
+    text-align: center;
+    height: 4rem;
+    position: relative;
+    vertical-align: top;
+    top: 1px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+.tabtwich{
+    background: #d3d1e5 url('https://www.instant-gaming.com/themes/igv1/modules/streamer_panel/images/twitch2.png') no-repeat 20px center;
+    background-size: 87px;
+    padding: 7px 20px 21px 120px;
+}
+.tabyoutube{
+    background: #eeeeee url('https://www.instant-gaming.com/themes/igv1/modules/streamer_panel/images/youtube3.png') no-repeat center 12px;
+    background-size: 96px;
+    padding: 0 68px;
+}
+.viewmore{
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #444;
+    border: 1px solid rgba(0,0,0,.5);
+    margin-left: auto;
+    height: 2.7rem;
+}
+.viewmore:hover{
+    background-color: #444;
+    color: #eee;
+}
+.container{
+    margin-bottom: 1.5rem;
+    padding: 2.5rem 1rem; 
+}
+.twich .container{
+    background: #d3d1e5;
+    border-radius: 0 8px 8px;
+}
+.youtube .container{
+    background: #efd1d1;
+    border-radius: 0 8px 8px;
+    display: none;
+}
+.container a{
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 5px;
+    width: 22.7%;
+    margin: 0 1rem;
+    background: #fff;
+    transition: 250ms;
+}
+.container a:hover{
+    transform: scale(1.05);
+}
+.twich .container>a>img{
+    margin: 1.6rem 1rem 1.6rem 10rem;
+    height: 4.6rem;
+    width: 4.6rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+}
+.youtube .container>a>img{
+    margin: 1.6rem 1rem 1.6rem 1.6rem;
+    height: 4.6rem;
+    width: 4.6rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+}
+.twich .infos{
+    width: 33%;
+    margin-top: 1.6rem;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.5rem;
+}
+.youtube .infos{
+    width: 15.2rem;
+    margin-top: 2.5rem;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.5rem;
+}
+.game{
+    opacity: .5;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.twich .viewers{
+    color: #a293c6;
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/streamer_panel/images/views.png') no-repeat 0;
+    padding-left: 1.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.youtube .viewers{
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.extension-container{
+    margin: 7rem 0 4rem;
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px;
+    min-height: 30rem;
+    background-image: url('https://www.instant-gaming.com/themes/igv1/modules/extensionPanel/images/extension.png');
+    background-position: 50%;
+    background-size: cover;
+}
+.explain{
+    width: 36rem;
+}
+.explain h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.explain p{
+    color: #6d9dc3;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+.explain button{
+    padding: 1rem 2rem;
+    background-color: #ff5400;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.explain button:hover{
+    opacity: 0.8;
+}
+
+/*GAMES*/
+.filters{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filters>select{
+    position: relative;
+    border-radius: 5px;
+    margin: 1rem 0.2rem;
+    color: #777;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 10%);
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    min-height: 2.7rem;
+    width: 24.5rem;
+    overflow: hidden;
+    vertical-align: top;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*GAMES*/
+
+/*LOGIN - REGISTER*/
+.nomain{
+    max-width: 100%!important;
+    margin: 0!important;
+    position: relative;
+    border-radius: 0!important;
+    z-index: 1;
+    font-size: 1.5rem;
+    background: #263353;
+    box-shadow: none!important;
+    height: 80vh;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.login .form-container{
+    width: 40rem;
+    height: auto;
+    background-color: #d3d1e5;
+    background-image: linear-gradient(90deg,#2e698c,#2ab0c1);;
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: #181818;
+    font-weight: 700;
+}
+.login .form-container>p{
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.login .form-container>form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.login .form-container>form>input[type="email"],
+.login .form-container>form>input[type="password"]{
+    height: 4.4rem;
+    background-color: #e8f0fe;
+    margin-bottom: 2.4rem;
+    width: 35rem;
+    border: 2px solid rgba(255,84,0,0.25);
+    outline: transparent;
+    border-radius: 20px;
+    color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+}
+
+.login .form-container>form>input[type="submit"]{
+    align-self: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: #ff3300;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.login .form-container>form>label{
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    margin-left: 1.3rem;
+}
+/*LOGIN - REGISTER*/
+
+footer{
+    background: #263353;
+    box-shadow: 0px -20px 40px 50px #263353, 0px 362px 0 120px #263353;
+    padding: 1rem 0 2rem;
+    position: relative;
+}
+.footer-inner{
+    max-width: 1130px;
+    margin: 0 auto;
+    position: relative;
+}
+.links{
+    text-align: center;
+    margin: 2rem 0
+}
+.links>ul>li{
+    display: inline-block;
+}
+.links>ul>li>a:not(.last-sublink){
+    color: #fff;
+    border-right: 1px solid hsla(0,0%,100%,.2);
+    margin-right: 1rem;
+    padding-right: 1rem;
+    height: 1.7rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.links>ul>li>a.last-sublink{
+    color: #fff;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    height: 1.7rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0
+}
+.socials>a{
+    width: 50px;
+    height: 50px;
+    border-radius: 33px;
+    transition: 250ms;
+    margin: 0.5rem;
+}
+.socials>a:hover{
+    transform: scale(1.05);
+}
+.socials>a.twitter{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/ig-socials5.png') 0 150px;
+    background-size: 50px;
+}
+.socials>a.youtube{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/ig-socials5.png') 0 100px;
+    background-size: 50px;
+}
+.socials>a.facebook{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/ig-socials5.png') 0 0;
+    background-size: 50px;
+}
+.socials>a.twitch{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/ig-socials5.png') 0 200px;
+    background-size: 50px;
+}
+.socials>a.extention{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/ig-socials5.png') 0 50px;
+    background-size: 50px;
+}
+.apps{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.apps>a{
+    margin: 0 0.5rem;
+}
+.copyright-payment{
+    display: flex;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.trustpilot{
+    background: url('https://www.instant-gaming.com/themes/igv1/modules/socials/images/trustpilot-badge4.png') no-repeat;
+    background-size: 100%;
+    height: 5.1rem;
+    border-radius: 0;
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+.copyright>p{
+    color: #fff;
+    text-align: left;
+    opacity: .3;
+    font-size: 1.3rem;
+}
+.payment{
+    display: flex;
+    align-items: flex-end;
+}
+.other{
+    max-width: 7.5rem;
+    margin-right: 1.5rem;
+}
+@media (max-width: 1186px){
+    html{
+        font-size: 58%;
+    }
+    .header-inner{
+        margin: 0 1.2rem;
+    }
+    .nav{
+        margin: 0 1.2rem;
+    }
+    .container a{
+        margin: 1rem 1rem;
+        width: 40%;
+    }
+    .product{
+        width: 22.9%;
+    }
+    .footer-inner{
+        margin: 0 1rem;
+    }
+}
+@media (max-width: 1075px){
+    html{
+        font-size: 56%;
+    }
+    .product{
+        width: 31%;
+    }
+    .nav-back{
+        font-size: 1.8rem!important;
+    }
+    .high .product{
+        width: 31%;
+    }
+}
+@media (max-width: 910px){
+    .nav-back{
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #li-su{
+        display: none;
+    }
+    #li-su2{
+        display: block;
+        margin-right: 1.5rem;
+    }
+    .product{
+        width: 28%;
+    }
+    .high .product{
+        width: 28%;
+    }
+    .title-block{
+        padding: 0 3rem 0.3rem;
+    }
+    .filters>select{
+        width: 22.5rem;
+    }
+}
+@media (max-width: 715px){
+    .product{
+        width: 44%;
+    }
+    .high .product{
+        width: 44%;
+    }
+    .nav-back{
+        font-size: 1.5rem!important;
+    }
+    .banner img{
+        border-radius: 0;
+    }
+    .filters>select{
+        width: 23%;
+    }
+    .container a{
+        width: 45%;
+    }
+}
+@media (max-width: 650px){
+    html{
+        font-size: 50%;
+    }
+    .input-search{
+        width: 26.5rem;
+    }
+    .container a{
+        width: 90%;
+    }
+    .tab{
+        height: 4.5rem;
+    }
+    .twich .container a img{
+        margin: 1.6rem 1rem 1.6rem 12rem;
+    }
+    .icon-search{
+        background: #ff5400 url(https://www.instant-gaming.com/themes/igv1/modules/searchBox/images/ig-google-search-hover.png) 5px 4px no-repeat;
+        background-size: 19px;
+    }
+    .filters{
+        display: block;
+    }
+    .filters>select{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 45%;
+    }
+    .payment{
+        display: none;
+    }
+    .header-inner-searcher>.logo{
+        background-size: 68%;
+    }
+    .title-block{
+        padding: 0 0.5rem 0.3rem;
+    }
+    .tab{
+        height: 5.5rem;
+    }
+    .viewmore{
+        display: none;
+    }
+    #mobile-title-block{
+        display: block;
+    }
+    .input-search{
+        width: 19.7rem;
+    }
+}
