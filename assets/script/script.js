@@ -1,17 +1,3 @@
-window.addEventListener('scroll', () => {
-
-    const currentScroll = window.pageYOffset;
-    const backlink = document.querySelector("#backgroundlink").style;
-
-    if(currentScroll >= 140) {
-        backlink.position = 'fixed';
-        backlink.top = '0';
-    } else {
-        backlink.position = 'absolute';
-        backlink.top = '140px';
-    }
-});
-
 const twich = document.querySelector('.twich .container');
 const youtube = document.querySelector('.youtube .container');
 const tabtwich = document.querySelector('.tabtwich');
