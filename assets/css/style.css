@@ -103,13 +103,14 @@ ul>li{
 .icon-search{
     width: 3.6rem;
     height: 3.6rem;
-    background: #ff5400 url(/assets/img/18521093211557740367-128.png) 9px 8px no-repeat;
+    background: #ff5400 url('C:/Users/Hican/OneDrive/Робочий стіл/WorldOfGames/assets/img/18521093211557740367-128.png') 9px 8px no-repeat;
     background-size: 19px;
     border: none;
     color: #fff;
     cursor: pointer;
     border-radius: 100px;
     margin: 0.4rem;
+    z-index: 6;
 }
 .icon-search:hover{
     background-color: #bd3e00;
@@ -297,12 +298,12 @@ ul>li{
     cursor: pointer;
 }
 .tabtwich{
-    background: #d3d1e5 url('/assets/img/twitch.png') no-repeat center;
+    background: #d3d1e5 url('C:/Users/Hican/OneDrive/Робочий стіл/WorldOfGames/assets/img/twitch.png') no-repeat center;
     background-size: 60px;
     padding: 0 50px;
 }
 .tabyoutube{
-    background: #eeeeee url('/assets/img/youtube.png') no-repeat center -10px;
+    background: #eeeeee url('C:/Users/Hican/OneDrive/Робочий стіл/WorldOfGames/assets/img/youtube.png') no-repeat center -10px;
     background-size: 60px;
     padding: 0 50px;
 }
@@ -408,7 +409,7 @@ ul>li{
     align-items: center;
     border-radius: 8px;
     min-height: 30rem;
-    background-image: url('/assets/img/store_home_share.jpg');
+    background-image: url('C:/Users/Hican/OneDrive/Робочий стіл/WorldOfGames/assets/img/store_home_share.jpg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -726,7 +727,7 @@ footer{
         margin: 1.6rem 1rem 1.6rem 3rem;
     }
     .icon-search{
-        background: #ff5400 url(/assets/img/18521093211557740367-128.png) 5px 4px no-repeat;
+        background: #ff5400 url('C:/Users/Hican/OneDrive/Робочий стіл/WorldOfGames/assets/img/18521093211557740367-128.png') 5px 4px no-repeat;
         background-size: 19px;
     }
     .filters{
